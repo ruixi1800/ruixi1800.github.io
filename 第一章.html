@@ -1,0 +1,101 @@
+<em><a href ="file:///Users/ruixi/Desktop/cs/index.html/%E6%A2%A6%E7%A6%BB%E5%A2%A8%E4%B8%8A/%E7%AC%AC%E4%B8%80%E7%AB%A0.html">首页</a></em>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>梦离墨上</title>
+
+  <style>
+    body {
+        font-family: "宋体";
+        line-height: 1.8;
+        max-width: 700px;
+        margin: auto;
+        background-color: #f0eee9;
+        color: rgb(20, 19, 8);
+        transition: all 0.3s ease;
+        
+
+    }
+
+    body.dark {
+        background-color: rgb(201, 198, 18);
+        color: black;
+    }
+    a {
+        color: #00ffff;
+    }
+    body.dark a {
+        color: blue;
+    }
+  
+    #themeToggle {
+        position:fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 26px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <button id="themeToggle">🌙</button>
+
+<h2>第一章 Chapter One - 初识</h2>
+
+<p>
+“好厉害一女的” 第一次看见轧墨是在国际线性代数比赛。这是一个团体比赛。
+在最后，来自哈佛大学梦若白组对战来自耶鲁大学的轧墨组。
+那是一个光芒照耀的日子。两方人马在30分钟内解题。
+谁解得最精准冠军归谁。
+</p>
+
+<p>
+梦若白在脑海里想了千遍万遍但是还没有记起该用哪个公式，
+最后在比赛剩余10min的时候算出来了一个逻辑上不出错的答案。
+</p>
+
+<p>
+到比赛结束，双方公开做题思路和解答过程。
+虽然轧墨没有解答完整，但是他写了整整10页答题纸的过程。
+运用了无限向量的新思路，打破了常规的代数方法。
+</p>
+
+<p>
+“到底要不要用这个方法”。
+最终选择了保守的方法。
+她们队赢了，但是若白脸上毫无喜怒之情。
+</p>
+
+<p>
+墨白站在10米远的红毯上，望着轧墨没有完成的解题思路，
+一丝淡淡的忧伤划过她那带有细微血丝的眼睛。
+</p>
+
+<hr>
+
+<script>
+    const button = document.getElementById("themeToggle");
+    button.addEventListener("click", function(){
+        document.body.classList.toggle("dark");
+        if (document.body.classList.contains("dark")){
+            button.textContent = "🌙";
+        } else{
+            button.textContent = "☀️";
+        }
+    });
+
+</script>
+
+<a href="https://www.microsoft.com/" target="_blank" rel="noopener">
+第二章
+</a>
+
+</body>
+
+</html>
