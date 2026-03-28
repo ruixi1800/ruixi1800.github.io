@@ -1,0 +1,80 @@
+
+首页
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梦离墨上</title>
+
+<style>
+    body{
+        font-family: "宋体";
+        line-height: 1.8;
+        max-width: 700px;
+        margin: auto;
+        background-color: #f0eee9;
+        color: rgb(20, 19, 8);
+        transition: all 0.3s ease;
+        
+
+    }
+
+    body.dark {
+        background-color: rgb(201, 198, 18);
+        color: black;
+    }
+    a {
+        color: #d01199;
+    }
+    body.dark a {
+        color: blue;
+    }
+  
+    #themeToggle {
+        position:fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 26px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+   
+    <button id="themeToggle">🌙</button>
+
+    <h1>梦离墨上</h1>
+    <ul> 
+        <li>梦之Meng</li>
+
+    </ul>
+    <h2>连载</h2>
+    <p><strong>简介</strong></p>
+    <p><em><a href ="https://www.jjwxc.net/onebook.php?novelid=10650447">晋江文学城</a></em></p>
+    <ol>
+        <li>女A男O 偏4i。</li>
+        <li>职场女精英追公司继承人。女追男。救赎。</li>
+        <li>沉默寡言闷骚女和阳光开朗小狗男。</li>
+        <li>嘴上说说算了，现实里谁不想急头白脸跟一个高帅肌肉男结婚拿到通行证在漂亮国好好工作。</li>
+        <li>家有贤夫，会做饭，有资源，有人脉，有钱，有社会地位。当然这些女主也有。</li>
+        <li>女主是纯靠自己打拼下来的，创业后得到江山。女主超级厉害。男主非常崇拜此家主。</li>
+    </ol>
+<script>
+    const button = document.getElementById("themeToggle");
+    button.addEventListener("click", function(){
+        document.body.classList.toggle("dark");
+        if (document.body.classList.contains("dark")){
+            button.textContent = "🌙";
+        } else{
+            button.textContent = "☀️";
+        }
+    });
+
+</script>
+<em><a href="file:///Users/ruixi/Desktop/cs/index.html/%E6%A2%A6%E7%A6%BB%E5%A2%A8%E4%B8%8A/%E7%AC%AC%E4%B8%80%E7%AB%A0.html" target="_blank" rel="noopener">第一章</a></em>
+</body>
+</html>
