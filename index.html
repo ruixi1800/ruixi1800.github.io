@@ -29,19 +29,24 @@
     body.dark a {
         color: blue;
     }
+    
+    .container {
+    position: relative;   /* 关键：作为定位参考 */
+    max-width: 700px;
+    margin: auto;
+    }
 
     #themeToggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: absolute;   /* 相对于 container */
+    top: 10px;
+    right: 10px;
 
-    font-size: 20px;
-    padding: 8px 10px;
-    border-radius: 50%;
-    background: white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border: none;
+    background: transparent;
+    font-size: 18px;
     cursor: pointer;
     }
+  
 
     </style>
 </head>
